@@ -1,0 +1,50 @@
+<p>Page d'inscription</p>
+
+<form [formGroup]="inscriptionForm" (ngSubmit)="onSubmit()">
+
+  <label>
+    firstname:
+    <input type="text" formControlName="firstname">
+  </label>
+
+  <label>
+    lastname:
+    <input type="text" formControlName="lastname">
+  </label>
+
+  <label>
+    email:
+    <input type="text" formControlName="email">
+  </label>
+
+  <label>
+     phonenumber:
+    <input type="text" formControlName="phonenumber">
+  </label>
+
+  <label>
+     licencenumber:
+    <input type="text" formControlName="licencenumber">
+  </label>
+
+
+
+  <label>
+     password:
+    <input type="text" formControlName="password">
+  </label>
+
+
+<button type="submit" [disabled]="!inscriptionForm.valid">Submit</button>
+</form>
+
+<hr>
+
+<p>
+  Form Value: {{ inscriptionForm.value | json }}
+</p>
+
+
+<p>
+  Form Status: {{ inscriptionForm.status }}
+</p>
