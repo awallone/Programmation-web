@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Utilisateur } from '../utilisateur';
+import { UTILISATEUR } from '../mock-utilisateur';
+
 
 @Component({
   selector: 'app-utilisateur',
@@ -8,22 +10,17 @@ import { Utilisateur } from '../utilisateur';
 })
 export class UtilisateurComponent implements OnInit {
 
-
-  utilisateur: Utilisateur = {
-    id: 1,
-    firstname: 'Baba',
-    lastname: 'Bobo',
-    email:  'baba.bobo@hotmail.fr',
-    phonenumber: '0642254690',
-    licencenumber: '78864988848',
-    password: 'Bababobobibi'
-
-  };
-
+Utilisateur = UTILISATEUR;
+selectedUtilisateur : Utilisateur;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+
+  onSelect(utilisateur: Utilisateur): void {
+  this.selectedUtilisateur = utilisateur;
+}
 
 }
