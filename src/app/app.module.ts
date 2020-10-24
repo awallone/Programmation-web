@@ -5,14 +5,16 @@ import { AppComponent } from './app.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
-import { UtilisateurComponent } from './utilisateur/utilisateur.component';
+import { UtilisateursComponent } from './utilisateurs/utilisateurs.component';
+import { UtilisateurDetailComponent } from './utilisateur-detail/utilisateur-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     InscriptionComponent,
-    UtilisateurComponent,
+    UtilisateursComponent,
+    UtilisateurDetailComponent,
   ],
   imports: [
     BrowserModule,

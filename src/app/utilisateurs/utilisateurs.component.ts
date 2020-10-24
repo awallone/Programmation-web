@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { Utilisateur } from '../utilisateur';
-import { UTILISATEUR } from '../mock-utilisateur';
+import { UTILISATEUR } from '../mock-utilisateurs';
 
 
 @Component({
-  selector: 'app-utilisateur',
-  templateUrl: './utilisateur.component.html',
-  styleUrls: ['./utilisateur.component.css']
+  selector: 'app-utilisateurs',
+  templateUrl: './utilisateurs.component.html',
+  styleUrls: ['./utilisateurs.component.css']
 })
-export class UtilisateurComponent implements OnInit {
+export class UtilisateursComponent implements OnInit {
 
-Utilisateur = UTILISATEUR;
+utilisateurs = UTILISATEUR;
 selectedUtilisateur : Utilisateur;
 
   constructor() { }
