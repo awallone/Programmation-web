@@ -7,6 +7,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { UtilisateursComponent } from './utilisateurs/utilisateurs.component';
 import { UtilisateurDetailComponent } from './utilisateur-detail/utilisateur-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { UtilisateurDetailComponent } from './utilisateur-detail/utilisateur-det
     InscriptionComponent,
     UtilisateursComponent,
     UtilisateurDetailComponent,
+    MessagesComponent,
   ],
   imports: [
     BrowserModule,
