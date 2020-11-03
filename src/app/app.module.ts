@@ -8,6 +8,9 @@ import { FormsModule } from '@angular/forms';
 import { UtilisateursComponent } from './utilisateurs/utilisateurs.component';
 import { UtilisateurDetailComponent } from './utilisateur-detail/utilisateur-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ConnexionComponent } from './connexion/connexion.component';
+
 
 
 @NgModule({
@@ -17,11 +20,13 @@ import { MessagesComponent } from './messages/messages.component';
     UtilisateursComponent,
     UtilisateurDetailComponent,
     MessagesComponent,
+    ConnexionComponent,
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
