@@ -20,7 +20,7 @@ import { ConnexionComponent } from './connexion/connexion.component';
     UtilisateursComponent,
     UtilisateurDetailComponent,
     MessagesComponent,
-    ConnexionComponent,
+    ConnexionComponent
   ],
   imports: [
     BrowserModule,

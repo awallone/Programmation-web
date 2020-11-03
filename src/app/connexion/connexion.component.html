@@ -1,1 +1,27 @@
-<p>connexion works!</p>
+<h2>Connexion</h2>
+<form [formGroup]="ConnexionForm" (ngSubmit)="onSubmit()">
+
+  <label>
+    email:
+    <input type="text" formControlName="email">
+  </label>
+<br>
+
+  <label>
+    password:
+    <input type="text" formControlName="password">
+  </label>
+
+<br>
+
+  <button type="submit" [disabled]="!ConnexionForm.valid">Connexion</button>
+  </form>
+
+<hr>
+  <p>
+    Form Value: {{ ConnexionForm.value | json }}
+  </p>
+
+  <p>
+    Form Status: {{ ConnexionForm.status }}
+  </p>
